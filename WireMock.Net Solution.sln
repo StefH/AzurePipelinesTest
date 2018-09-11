@@ -1,0 +1,161 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{EF242EDF-7133-4277-9A0C-18744DE08707}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{197A0EE3-94E5-4807-BBCF-2F1BCA28A6AE}"
+	ProjectSection(SolutionItems) = preProject
+		.runsettings = .runsettings
+		appveyor.yml = appveyor.yml
+		CHANGELOG.md = CHANGELOG.md
+		codecov-local.cmd = codecov-local.cmd
+		GitReleaseNotes.txt = GitReleaseNotes.txt
+		README.md = README.md
+		ReSharper_WireMock.DotSettings = ReSharper_WireMock.DotSettings
+		WireMock.Net Solution.sln.DotSettings = WireMock.Net Solution.sln.DotSettings
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "examples", "examples", "{F0C22C47-DF71-463C-9B04-B4E0F3B8708A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{890A1DED-C229-4FA1-969E-AAC3BBFC05E5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WireMock.Net", "src\WireMock.Net\WireMock.Net.csproj", "{D3804228-91F4-4502-9595-39584E5A01AD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WireMock.Net.Tests", "test\WireMock.Net.Tests\WireMock.Net.Tests.csproj", "{31DC2EF8-C3FE-467D-84BE-FB5D956E612E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WireMock.Net.Console.NETCoreApp", "examples\WireMock.Net.Console.NETCoreApp\WireMock.Net.Console.NETCoreApp.csproj", "{FE281639-B014-4C8A-96FA-141164A74713}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WireMock.Net.Console.Proxy.NETCoreApp", "examples\WireMock.Net.Console.Record.NETCoreApp\WireMock.Net.Console.Proxy.NETCoreApp.csproj", "{1995E414-F197-4AB4-90C2-68D806B5AF59}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WireMock.Net.Client", "examples\WireMock.Net.Client\WireMock.Net.Client.csproj", "{058D4B6C-C03E-49D0-91DB-A535B058FA0D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WireMock.Net.StandAlone", "src\WireMock.Net.StandAlone\WireMock.Net.StandAlone.csproj", "{B6269AAC-170A-43D5-8B9A-579DED3D9A95}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WireMock.Net.StandAlone.NETCoreApp", "examples\WireMock.Net.StandAlone.NETCoreApp\WireMock.Net.StandAlone.NETCoreApp.csproj", "{10E16614-61CA-48D8-8BDD-664C13913DED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WireMock.Net.StandAlone.Net452", "examples\WireMock.Net.StandAlone.Net452\WireMock.Net.StandAlone.Net452.csproj", "{668F689E-57B4-422E-8846-C0FF643CA999}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B6269AAC-170A-43D5-8B9A-579DED3D9A95} = {B6269AAC-170A-43D5-8B9A-579DED3D9A95}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WireMock.Net.WebApplication.NETCore2", "examples\WireMock.Net.WebApplication\WireMock.Net.WebApplication.NETCore2.csproj", "{049539C1-7A66-4559-AD7A-B1C73B97CBB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WireMock.Net.Console.Proxy.Net452", "examples\WireMock.Net.Console.Proxy.Net452\WireMock.Net.Console.Proxy.Net452.csproj", "{26433A8F-BF01-4962-97EB-81BFFBB61096}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WireMock.Net.Console.Proxy.NETCoreApp2", "examples\WireMock.Net.Console.Proxy.NETCoreApp2\WireMock.Net.Console.Proxy.NETCoreApp2.csproj", "{23A9AA3C-40FC-42AA-8A5E-05899795A1C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WireMock.Net.StandAlone.Net461", "examples\WireMock.Net.StandAlone.Net461\WireMock.Net.StandAlone.Net461.csproj", "{3C279524-DB73-4DE3-BEF1-F2B2958C9F65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WireMock.Net.Service", "examples\Wiremock.Net.Service\WireMock.Net.Service.csproj", "{7F0B2446-0363-4720-AF46-F47F83B557DC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WireMock.Net.Console.HeadersTest", "examples\WireMock.Net.Console.HeadersTest\WireMock.Net.Console.HeadersTest.csproj", "{B70278E7-A2C6-4A3B-BBA9-1C873CA6F03C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WireMock.Net.Console.Net461.Classic", "examples\WireMock.Net.Console.Net461.Classic\WireMock.Net.Console.Net461.Classic.csproj", "{1261BB9B-A7D4-456C-8985-3CE560361B8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WireMock.Net.Console.Net452.Classic", "examples\WireMock.Net.Console.Net452.Classic\WireMock.Net.Console.Net452.Classic.csproj", "{668F689E-57B4-422E-8846-C0FF643CA268}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WireMock.Net.Console.NETCoreApp2", "examples\WireMock.Net.Console.NETCoreApp2\WireMock.Net.Console.NETCoreApp2.csproj", "{83645809-9E01-4E81-8733-BA9497554ABF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D3804228-91F4-4502-9595-39584E5A01AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3804228-91F4-4502-9595-39584E5A01AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3804228-91F4-4502-9595-39584E5A01AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3804228-91F4-4502-9595-39584E5A01AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31DC2EF8-C3FE-467D-84BE-FB5D956E612E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31DC2EF8-C3FE-467D-84BE-FB5D956E612E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31DC2EF8-C3FE-467D-84BE-FB5D956E612E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31DC2EF8-C3FE-467D-84BE-FB5D956E612E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE281639-B014-4C8A-96FA-141164A74713}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE281639-B014-4C8A-96FA-141164A74713}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE281639-B014-4C8A-96FA-141164A74713}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE281639-B014-4C8A-96FA-141164A74713}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1995E414-F197-4AB4-90C2-68D806B5AF59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1995E414-F197-4AB4-90C2-68D806B5AF59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1995E414-F197-4AB4-90C2-68D806B5AF59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1995E414-F197-4AB4-90C2-68D806B5AF59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{058D4B6C-C03E-49D0-91DB-A535B058FA0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{058D4B6C-C03E-49D0-91DB-A535B058FA0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{058D4B6C-C03E-49D0-91DB-A535B058FA0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{058D4B6C-C03E-49D0-91DB-A535B058FA0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6269AAC-170A-43D5-8B9A-579DED3D9A95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6269AAC-170A-43D5-8B9A-579DED3D9A95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6269AAC-170A-43D5-8B9A-579DED3D9A95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6269AAC-170A-43D5-8B9A-579DED3D9A95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10E16614-61CA-48D8-8BDD-664C13913DED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10E16614-61CA-48D8-8BDD-664C13913DED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10E16614-61CA-48D8-8BDD-664C13913DED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10E16614-61CA-48D8-8BDD-664C13913DED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{668F689E-57B4-422E-8846-C0FF643CA999}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{668F689E-57B4-422E-8846-C0FF643CA999}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{668F689E-57B4-422E-8846-C0FF643CA999}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{668F689E-57B4-422E-8846-C0FF643CA999}.Release|Any CPU.Build.0 = Release|Any CPU
+		{049539C1-7A66-4559-AD7A-B1C73B97CBB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{049539C1-7A66-4559-AD7A-B1C73B97CBB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{049539C1-7A66-4559-AD7A-B1C73B97CBB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{049539C1-7A66-4559-AD7A-B1C73B97CBB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26433A8F-BF01-4962-97EB-81BFFBB61096}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26433A8F-BF01-4962-97EB-81BFFBB61096}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26433A8F-BF01-4962-97EB-81BFFBB61096}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26433A8F-BF01-4962-97EB-81BFFBB61096}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23A9AA3C-40FC-42AA-8A5E-05899795A1C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23A9AA3C-40FC-42AA-8A5E-05899795A1C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23A9AA3C-40FC-42AA-8A5E-05899795A1C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23A9AA3C-40FC-42AA-8A5E-05899795A1C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C279524-DB73-4DE3-BEF1-F2B2958C9F65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C279524-DB73-4DE3-BEF1-F2B2958C9F65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C279524-DB73-4DE3-BEF1-F2B2958C9F65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C279524-DB73-4DE3-BEF1-F2B2958C9F65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F0B2446-0363-4720-AF46-F47F83B557DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F0B2446-0363-4720-AF46-F47F83B557DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F0B2446-0363-4720-AF46-F47F83B557DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F0B2446-0363-4720-AF46-F47F83B557DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B70278E7-A2C6-4A3B-BBA9-1C873CA6F03C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B70278E7-A2C6-4A3B-BBA9-1C873CA6F03C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B70278E7-A2C6-4A3B-BBA9-1C873CA6F03C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B70278E7-A2C6-4A3B-BBA9-1C873CA6F03C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1261BB9B-A7D4-456C-8985-3CE560361B8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1261BB9B-A7D4-456C-8985-3CE560361B8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1261BB9B-A7D4-456C-8985-3CE560361B8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1261BB9B-A7D4-456C-8985-3CE560361B8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{668F689E-57B4-422E-8846-C0FF643CA268}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{668F689E-57B4-422E-8846-C0FF643CA268}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{668F689E-57B4-422E-8846-C0FF643CA268}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{668F689E-57B4-422E-8846-C0FF643CA268}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83645809-9E01-4E81-8733-BA9497554ABF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83645809-9E01-4E81-8733-BA9497554ABF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83645809-9E01-4E81-8733-BA9497554ABF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83645809-9E01-4E81-8733-BA9497554ABF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D3804228-91F4-4502-9595-39584E5A01AD} = {EF242EDF-7133-4277-9A0C-18744DE08707}
+		{31DC2EF8-C3FE-467D-84BE-FB5D956E612E} = {890A1DED-C229-4FA1-969E-AAC3BBFC05E5}
+		{FE281639-B014-4C8A-96FA-141164A74713} = {F0C22C47-DF71-463C-9B04-B4E0F3B8708A}
+		{1995E414-F197-4AB4-90C2-68D806B5AF59} = {F0C22C47-DF71-463C-9B04-B4E0F3B8708A}
+		{058D4B6C-C03E-49D0-91DB-A535B058FA0D} = {F0C22C47-DF71-463C-9B04-B4E0F3B8708A}
+		{B6269AAC-170A-43D5-8B9A-579DED3D9A95} = {EF242EDF-7133-4277-9A0C-18744DE08707}
+		{10E16614-61CA-48D8-8BDD-664C13913DED} = {F0C22C47-DF71-463C-9B04-B4E0F3B8708A}
+		{668F689E-57B4-422E-8846-C0FF643CA999} = {F0C22C47-DF71-463C-9B04-B4E0F3B8708A}
+		{049539C1-7A66-4559-AD7A-B1C73B97CBB0} = {F0C22C47-DF71-463C-9B04-B4E0F3B8708A}
+		{26433A8F-BF01-4962-97EB-81BFFBB61096} = {F0C22C47-DF71-463C-9B04-B4E0F3B8708A}
+		{23A9AA3C-40FC-42AA-8A5E-05899795A1C6} = {F0C22C47-DF71-463C-9B04-B4E0F3B8708A}
+		{3C279524-DB73-4DE3-BEF1-F2B2958C9F65} = {F0C22C47-DF71-463C-9B04-B4E0F3B8708A}
+		{7F0B2446-0363-4720-AF46-F47F83B557DC} = {F0C22C47-DF71-463C-9B04-B4E0F3B8708A}
+		{B70278E7-A2C6-4A3B-BBA9-1C873CA6F03C} = {F0C22C47-DF71-463C-9B04-B4E0F3B8708A}
+		{1261BB9B-A7D4-456C-8985-3CE560361B8E} = {F0C22C47-DF71-463C-9B04-B4E0F3B8708A}
+		{668F689E-57B4-422E-8846-C0FF643CA268} = {F0C22C47-DF71-463C-9B04-B4E0F3B8708A}
+		{83645809-9E01-4E81-8733-BA9497554ABF} = {F0C22C47-DF71-463C-9B04-B4E0F3B8708A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BF428BCC-C837-433B-87D2-15C7014B73E9}
+	EndGlobalSection
+EndGlobal

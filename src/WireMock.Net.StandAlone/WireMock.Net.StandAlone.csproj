@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Description>Lightweight StandAlone Http Mocking Server for .Net.</Description>
+    <AssemblyTitle>WireMock.Net.StandAlone</AssemblyTitle>
+    <Version>1.0.4.16</Version>
+    <Authors>Stef Heyenrath</Authors>
+    <TargetFrameworks>net451;net452;net46;netstandard1.3;netstandard2.0</TargetFrameworks>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <AssemblyName>WireMock.Net.StandAlone</AssemblyName>
+    <PackageId>WireMock.Net.StandAlone</PackageId>
+    <PackageTags>tdd;mock;http;wiremock;test;server;unittest</PackageTags>
+    <PackageReleaseNotes>See CHANGELOG.md</PackageReleaseNotes>
+    <PackageIconUrl>https://raw.githubusercontent.com/WireMock-Net/WireMock.Net/master/WireMock.Net-Logo.png</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/WireMock-Net/WireMock.Net</PackageProjectUrl>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/WireMock-Net/WireMock.Net/master/LICENSE</PackageLicenseUrl>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/WireMock-Net/WireMock.Net</RepositoryUrl>
+    <ApplicationIcon>../../WireMock.Net-Logo.ico</ApplicationIcon>
+    <RootNamespace>WireMock.Net.StandAlone</RootNamespace>
+    <DebugType>full</DebugType>
+    <IncludeSource>True</IncludeSource>
+    <IncludeSymbols>True</IncludeSymbols>
+    <ProjectGuid>{B6269AAC-170A-43D5-8B9A-579DED3D9A95}</ProjectGuid>
+  </PropertyGroup>
+  
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <PathMap>$(MSBuildProjectDirectory)=/</PathMap>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'netstandard1.3' or '$(TargetFramework)' == 'netstandard2.0' ">
+    <DefineConstants>NETSTANDARD;USE_ASPNETCORE</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net461'">
+    <DefineConstants>USE_ASPNETCORE;NET46</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="JetBrains.Annotations" Version="10.4.0">
+      <PrivateAssets>All</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WireMock.Net\WireMock.Net.csproj" />
+  </ItemGroup>
+</Project>

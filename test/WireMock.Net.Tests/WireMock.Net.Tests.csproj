@@ -1,0 +1,58 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Authors>Stef Heyenrath</Authors>
+    <TargetFrameworks>net452;netcoreapp2.1</TargetFrameworks>
+    <DebugType>full</DebugType>
+    <AssemblyName>WireMock.Net.Tests</AssemblyName>
+    <PackageId>WireMock.Net.Tests</PackageId>
+    <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+    <ProjectGuid>{31DC2EF8-C3FE-467D-84BE-FB5D956E612E}</ProjectGuid>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\WireMock.Net\WireMock.Net.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.3.0" />
+    <PackageReference Include="Moq" Version="4.8.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    <PackageReference Include="NFluent" Version="2.2.0" />
+    <PackageReference Include="OpenCover" Version="4.6.519" />
+    <PackageReference Include="ReportGenerator" Version="3.1.2" />
+    <PackageReference Include="SimMetrics.Net" Version="1.0.4" />
+    <PackageReference Include="System.Threading" Version="4.3.0" />
+    <PackageReference Include="xunit" Version="2.4.0" /> 
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
+    <PackageReference Include="System.Linq.Dynamic.Core" Version="1.0.8.18" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net452'">
+    <PackageReference Include="Microsoft.Owin.Host.HttpListener" Version="3.1.0" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net462'">
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="responsebody.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="__admin\mappings\00000002-ee28-4f29-ae63-1ac9b0802d86.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="__admin\mappings\00000002-ee28-4f29-ae63-1ac9b0802d87.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="__admin\mappings\documentdb_root.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{82a7f48d-3b50-4b1e-b82e-3ada8210c358}" />
+  </ItemGroup>
+
+</Project>
